@@ -1,78 +1,129 @@
 import React, { useState } from "react";
-import {
-  AiOutlineMenu,
-  AiOutlineClose,
-  AiFillHome,
-  AiFillProject,
-} from "react-icons/ai";
-import { FcAbout } from "react-icons/fc";
-import { GiArchiveRegister, GiNightVision } from "react-icons/gi";
-import { GrCertificate } from "react-icons/gr";
+import { Link } from "react-scroll";
+import { FaTimes, FaBars } from "react-icons/fa";
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+  const [Toggle, setToggle] = useState(false);
+
+  function handleToggleClick() {
+    setToggle(!Toggle);
+  }
 
   return (
-    <div className="navbar text-white flex gap-10 text-2xl justify-between items-center p-4 ">
-      <div className="navbar__left cursor-pointer">
-        <img src="" alt="company__logo" className="navbar__logo" />
-      </div>
-      <div className="hidden lg:flex navbar__middle">
-        <ul className="flex gap-4 text-slate-400">
-          <li className="text-white cursor-pointer">Home</li>
-          <li className="cursor-pointer">Projects</li>
-          <li className="cursor-pointer">About</li>
-          <li className="cursor-pointer">Registration</li>
-          <li className="cursor-pointer">Vision</li>
-          <li className="cursor-pointer">Certificates</li>
-        </ul>
-      </div>
-      <div className="hidden lg:flex navbar__right cursor-pointer">
-        <p>GET IN TOUCH</p>
-      </div>
-      <div
-        className="lg:hidden flex navbar__right cursor-pointer"
-        onClick={() => setToggle(!toggle)}
-      >
-        {toggle ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
+    <div className=" z-10 fixed w-full h-[80px] bg-[#0d0e0e] flex  items-center justify-between text-gray-300">
+      <div>
+        <img src="" alt="logo" style={{ width: "125px", height: "135px" }} />
       </div>
 
-      {/* Mobile Nav Start */}
-      <div
+      {/* Start: Navigation Menu Links */}
+      <ul className="hidden md:flex">
+        <li>
+          <Link to="home" smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="about" smooth={true} duration={500}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="vision" smooth={true} duration={500}>
+            Vision
+          </Link>
+        </li>
+        <li>
+          <Link to="work" smooth={true} duration={500}>
+            Work
+          </Link>
+        </li>
+        <li>
+          <Link to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
+        </li>
+        <li>
+          <Link to="registration" smooth={true} duration={500}>
+            Registration
+          </Link>
+        </li>
+      </ul>
+      {/* End: Navigation Menu Links */}
+
+      <div onClick={handleToggleClick} className="md:hidden px-3 z-10 text-3xl">
+        {Toggle ? <FaTimes /> : <FaBars />}
+      </div>
+
+      {/* Start: Mobile Navigation Menu Links */}
+      <ul
         className={
-          toggle
-            ? "mobile__nav absolute left-0 top-[10vh] bg-[whitesmoke] w-full h-screen"
+          Toggle
+            ? "bg-[#0d0e0e] top-0 left-0 absolute w-full h-screen flex flex-col justify-center items-center"
             : "hidden"
         }
       >
-        <ul className="flex flex-col gap-14 text-black h-full justify-center items-center text-5xl">
-          <li className="cursor-pointer flex gap-2">
-            <AiFillHome />
-            <p>Home</p>
-          </li>
-          <li className="cursor-pointer flex gap-2">
-            <AiFillProject />
-            <p>Projects</p>
-          </li>
-          <li className="cursor-pointer flex gap-2">
-            <FcAbout />
-            <p>About</p>
-          </li>
-          <li className="cursor-pointer flex gap-2">
-            <GiArchiveRegister />
-            <p>Registration</p>
-          </li>
-          <li className="cursor-pointer flex gap-2">
-            <GiNightVision />
-            <p>Vision</p>
-          </li>
-          <li className="cursor-pointer flex gap-2">
-            <GrCertificate />
-            <p>Certificates</p>
-          </li>
-        </ul>
-      </div>
-      {/* Mobile Nav End  */}
+        <li className="py-6 text-4xl">
+          <Link
+            onClick={handleToggleClick}
+            to="home"
+            smooth={true}
+            duration={500}
+          >
+            Home
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link
+            onClick={handleToggleClick}
+            to="about"
+            smooth={true}
+            duration={500}
+          >
+            About
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link
+            onClick={handleToggleClick}
+            to="vision"
+            smooth={true}
+            duration={500}
+          >
+            Vision
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link
+            onClick={handleToggleClick}
+            to="work"
+            smooth={true}
+            duration={500}
+          >
+            Work
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link
+            onClick={handleToggleClick}
+            to="contact"
+            smooth={true}
+            duration={500}
+          >
+            Contact
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link
+            onClick={handleToggleClick}
+            to="registration"
+            smooth={true}
+            duration={500}
+          >
+            Registration
+          </Link>
+        </li>
+      </ul>
+      {/* End: Mobile Navigation Menu Links */}
     </div>
   );
 };
