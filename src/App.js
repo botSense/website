@@ -1,12 +1,7 @@
 import React from "react";
-import Timer from "./components/Timer";
 
 const App = () => {
-  return (
-    <div className="App bg-slate-500">
-      <Timer />
-    </div>
-  );
+  return <div className="App h-screen w-screen">Hello World</div>;
 };
 
 export default App;
