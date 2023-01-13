@@ -10,26 +10,26 @@ const Navbar = () => {
   }
 
   return (
-    <div className=" z-10 fixed w-full h-[80px] bg-[#0d0e0e] flex  items-center justify-between text-gray-300">
+    <div className=" z-30 fixed w-full h-[80px] bg-[#0d0e0e] flex  items-center justify-between text-gray-300">
       <Link
         to="home"
         smooth={true}
         duration={500}
         className="flex items-center h-10 cursor-pointer"
       >
-        <img src={logo} alt="logo" className="h-20 w-20" />
-        <p className=" text-white">botSense</p>
+        <img src={logo} alt="logo" className="h-20 w-20 animate-bounce" />
+        <p className=" text-white animate-pulse">botSense</p>
       </Link>
 
       {/* Start: Navigation Menu Links */}
       <ul className="hidden md:flex">
         <li>
-          <Link to="home" smooth={true} duration={500} offset={-500}>
+          <Link to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} duration={500} offset={-150}>
+          <Link to="about" smooth={true} duration={500} offset={-80}>
             About
           </Link>
         </li>
@@ -74,7 +74,6 @@ const Navbar = () => {
             to="home"
             smooth={true}
             duration={500}
-            offset={-300}
           >
             Home
           </Link>
@@ -85,7 +84,7 @@ const Navbar = () => {
             to="about"
             smooth={true}
             duration={500}
-            offset={-150}
+            offset={-80}
           >
             About
           </Link>

@@ -2,14 +2,22 @@ import React from "react";
 
 const About = () => {
   return (
-    <div name="about" className="w-full h-screen bg-[#0d0e0e] text-gray-300">
-      <h1>About</h1>
+    <div
+      name="about"
+      className="w-full h-screen flex flex-col justify-center items-center text-center p-2 gap-5  bg-[#0d0e0e] text-gray-300"
+    >
+      <h1 className="text-gray-300 text-4xl font-bold inline border-b-4 border-yellow-600">
+        About
+      </h1>
       <p>
         botSense is team of IoT engineers addressing common people needs by
         bringing tech and innovation to life. we help in reducing human effort
         for many activities, and provides tons of information. When people have
         data, they feel more in control of every aspect that surrounds them.
       </p>
+      <h1 className="text-gray-300 text-4xl font-bold inline border-b-4 border-yellow-600">
+        Mission
+      </h1>
       <p>
         To be an innovative technology integrator. Building on our technologies,
         competencies and customer interests, and creating value for our

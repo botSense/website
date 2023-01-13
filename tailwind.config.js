@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        SOURCEcODE: ["Source Code Pro", "monospace"],
+        SOURCECODE: ["Source Code Pro", "monospace"],
       },
     },
   },
