@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FaTimes, FaBars } from "react-icons/fa";
-
+import logo from "../assests/logo.png";
 const Navbar = () => {
   const [Toggle, setToggle] = useState(false);
 
@@ -11,9 +11,15 @@ const Navbar = () => {
 
   return (
     <div className=" z-10 fixed w-full h-[80px] bg-[#0d0e0e] flex  items-center justify-between text-gray-300">
-      <div>
-        <img src="" alt="logo" style={{ width: "125px", height: "135px" }} />
-      </div>
+      <Link
+        to="home"
+        smooth={true}
+        duration={500}
+        className="flex items-center h-10 cursor-pointer"
+      >
+        <img src={logo} alt="logo" className="h-20 w-20" />
+        <p className=" text-white">botSense</p>
+      </Link>
 
       {/* Start: Navigation Menu Links */}
       <ul className="hidden md:flex">
