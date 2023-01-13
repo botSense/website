@@ -23,28 +23,28 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} duration={500}>
+          <Link to="about" smooth={true} duration={500} offset={-150}>
             About
           </Link>
         </li>
         <li>
-          <Link to="vision" smooth={true} duration={500}>
+          <Link to="vision" smooth={true} duration={500} offset={-150}>
             Vision
           </Link>
         </li>
         <li>
-          <Link to="work" smooth={true} duration={500}>
+          <Link to="work" smooth={true} duration={500} offset={-150}>
             Work
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} duration={500}>
+          <Link to="contact" smooth={true} duration={500} offset={-30}>
             Contact
           </Link>
         </li>
         <li>
-          <Link to="registration" smooth={true} duration={500}>
-            Registration
+          <Link to="internship" smooth={true} duration={500} offset={-100}>
+            Internship
           </Link>
         </li>
       </ul>
@@ -78,6 +78,7 @@ const Navbar = () => {
             to="about"
             smooth={true}
             duration={500}
+            offset={-150}
           >
             About
           </Link>
@@ -88,6 +89,7 @@ const Navbar = () => {
             to="vision"
             smooth={true}
             duration={500}
+            offset={-150}
           >
             Vision
           </Link>
@@ -98,6 +100,7 @@ const Navbar = () => {
             to="work"
             smooth={true}
             duration={500}
+            offset={-150}
           >
             Work
           </Link>
@@ -108,6 +111,7 @@ const Navbar = () => {
             to="contact"
             smooth={true}
             duration={500}
+            offset={-30}
           >
             Contact
           </Link>
@@ -115,11 +119,12 @@ const Navbar = () => {
         <li className="py-6 text-4xl">
           <Link
             onClick={handleToggleClick}
-            to="registration"
+            to="internship"
             smooth={true}
             duration={500}
+            offset={-100}
           >
-            Registration
+            Internship
           </Link>
         </li>
       </ul>

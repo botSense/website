@@ -4,7 +4,7 @@ import React from "react";
 const Form = () => {
   return (
     <div
-      name="registration"
+      name="internship"
       className="w-full h-[75vh] bg-[#0d0e0e] text-gray-300 flex justify-center items-center"
     >
       <iframe
