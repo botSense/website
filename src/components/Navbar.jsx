@@ -24,7 +24,7 @@ const Navbar = () => {
       {/* Start: Navigation Menu Links */}
       <ul className="hidden md:flex">
         <li>
-          <Link to="home" smooth={true} duration={500}>
+          <Link to="home" smooth={true} duration={500} offset={-500}>
             Home
           </Link>
         </li>
@@ -74,6 +74,7 @@ const Navbar = () => {
             to="home"
             smooth={true}
             duration={500}
+            offset={-300}
           >
             Home
           </Link>
