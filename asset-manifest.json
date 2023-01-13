@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.5bca1a30.css",
-    "main.js": "/static/js/main.152718b0.js",
+    "main.css": "/static/css/main.bbeb61c1.css",
+    "main.js": "/static/js/main.a36582b8.js",
+    "static/media/ignitra.jpg": "/static/media/ignitra.4ce5627c6215e94f7027.jpg",
     "static/media/logo.png": "/static/media/logo.142db80710efaaddab69.png",
     "index.html": "/index.html",
-    "main.5bca1a30.css.map": "/static/css/main.5bca1a30.css.map",
-    "main.152718b0.js.map": "/static/js/main.152718b0.js.map"
+    "main.bbeb61c1.css.map": "/static/css/main.bbeb61c1.css.map",
+    "main.a36582b8.js.map": "/static/js/main.a36582b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bca1a30.css",
-    "static/js/main.152718b0.js"
+    "static/css/main.bbeb61c1.css",
+    "static/js/main.a36582b8.js"
   ]
 }
