@@ -15,6 +15,7 @@ const Navbar = () => {
         to="home"
         smooth={true}
         duration={500}
+        offset={-100}
         className="flex items-center h-10 cursor-pointer"
       >
         <img src={logo} alt="logo" className="h-20 w-20 animate-pulse" />
