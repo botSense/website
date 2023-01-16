@@ -31,6 +31,12 @@ const Work = () => {
           anywhere from the globe using ESP32, GSM SIM800
         </li>
       </div>
+      <iframe
+        className="w-full h-full md:h-[50vh] md:w-[50vw]"
+        src="https://drive.google.com/file/d/1-aN0loumXIBhKHSPnr8GUiuUsYqEm3bT/preview"
+        allow="autoplay"
+        title="video1"
+      ></iframe>
     </div>
   );
 };

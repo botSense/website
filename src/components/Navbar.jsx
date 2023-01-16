@@ -10,7 +10,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className=" z-30 fixed w-full h-[80px] flex  items-center justify-between shadow-md bg-[#0d0e0e] text-gray-300">
+    <div className="container-fluid mx-auto  flex justify-between items-center text-white h-20 sticky top-0 bg-black shadow-md shadow-gray-900 z-30 ">
       <Link
         to="home"
         smooth={true}
@@ -24,7 +24,7 @@ const Navbar = () => {
       {/* Start: Navigation Menu Links */}
       <ul className="hidden md:flex">
         <li>
-          <Link to="home" smooth={true} duration={500}>
+          <Link to="home" smooth={true} duration={500} offset={-100}>
             Home
           </Link>
         </li>
@@ -39,7 +39,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="work" smooth={true} duration={500}>
+          <Link to="work" smooth={true} duration={500} offset={-50}>
             Work
           </Link>
         </li>
@@ -74,6 +74,7 @@ const Navbar = () => {
             to="home"
             smooth={true}
             duration={500}
+            offset={-100}
           >
             Home
           </Link>
@@ -104,6 +105,7 @@ const Navbar = () => {
             to="work"
             smooth={true}
             duration={500}
+            offset={-100}
           >
             Work
           </Link>

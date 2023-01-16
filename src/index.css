@@ -21,4 +21,8 @@
       @apply px-4;
       @apply cursor-pointer;
     }
+    li:hover{
+      @apply text-yellow-600
+    }
+ 
   }
