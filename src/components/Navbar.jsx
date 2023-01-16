@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FaTimes, FaBars } from "react-icons/fa";
 import logo from "../assests/logo.png";
+import { Fade, Zoom } from "react-awesome-reveal";
+
 const Navbar = () => {
   const [Toggle, setToggle] = useState(false);
 
@@ -18,44 +20,46 @@ const Navbar = () => {
         offset={-100}
         className="flex items-center h-10 cursor-pointer"
       >
-        <img src={logo} alt="logo" className="h-20 w-20 animate-pulse" />
-        <p className=" text-white animate-pulse font-extrabold uppercase">
-          botSense
-        </p>
+        <Fade>
+          <img src={logo} alt="logo" className="h-20 w-20 " />
+          <p className=" text-white  font-extrabold">botSense</p>
+        </Fade>
       </Link>
 
       {/* Start: Navigation Menu Links */}
       <ul className="hidden md:flex">
-        <li>
-          <Link to="home" smooth={true} duration={500} offset={-100}>
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link to="about" smooth={true} duration={500} offset={-80}>
-            About
-          </Link>
-        </li>
-        <li>
-          <Link to="vision" smooth={true} duration={500}>
-            Vision
-          </Link>
-        </li>
-        <li>
-          <Link to="work" smooth={true} duration={500} offset={-50}>
-            Work
-          </Link>
-        </li>
-        <li>
-          <Link to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li>
-        <li>
-          <Link to="internship" smooth={true} duration={500}>
-            Internship
-          </Link>
-        </li>
+        <Zoom>
+          <li>
+            <Link to="home" smooth={true} duration={500} offset={-100}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="about" smooth={true} duration={500} offset={-40}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="vision" smooth={true} duration={500}>
+              Vision
+            </Link>
+          </li>
+          <li>
+            <Link to="work" smooth={true} duration={500} offset={-50}>
+              Work
+            </Link>
+          </li>
+          <li>
+            <Link to="contact" smooth={true} duration={500} offset={-50}>
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link to="internship" smooth={true} duration={500}>
+              Internship
+            </Link>
+          </li>
+        </Zoom>
       </ul>
       {/* End: Navigation Menu Links */}
 
