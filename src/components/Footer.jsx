@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full text-center bg-[#0d0e0e]">
+    <div className="w-full h-full text-center">
       <p className="text-gray-500 p-5">
         ©2023 The botsense Company. All rights reserved. Designed by{" "}
         <a

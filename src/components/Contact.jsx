@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-[#0d0e0e] flex justify-center items-center"
+      className="w-full h-screen flex justify-center items-center"
     >
       <Zoom>
         <form

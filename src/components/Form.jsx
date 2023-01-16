@@ -5,7 +5,7 @@ const Form = () => {
   return (
     <div
       name="internship"
-      className="w-full h-[75vh] bg-[#bfbfbf] flex justify-center items-center"
+      className="w-full h-[75vh] flex justify-center items-center"
     >
       <iframe
         className="w-full sm:w-[90%] h-full p-4"

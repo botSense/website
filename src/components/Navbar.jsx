@@ -10,14 +10,14 @@ const Navbar = () => {
   }
 
   return (
-    <div className=" z-30 fixed w-full h-[80px] bg-[#0d0e0e] flex  items-center justify-between text-gray-300">
+    <div className=" z-30 fixed w-full h-[80px] flex  items-center justify-between shadow-md bg-[#0d0e0e] text-gray-300">
       <Link
         to="home"
         smooth={true}
         duration={500}
         className="flex items-center h-10 cursor-pointer"
       >
-        <img src={logo} alt="logo" className="h-20 w-20 animate-bounce" />
+        <img src={logo} alt="logo" className="h-20 w-20 animate-pulse" />
         <p className=" text-white animate-pulse">botSense</p>
       </Link>
 
