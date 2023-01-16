@@ -12,8 +12,9 @@ const Work = () => {
           Work
         </p>
       </Zoom>
-      <Fade>
-        <div>
+
+      <div>
+        <Fade>
           <li>
             IoT based project using ESP8266 and IFTTT(for BCA fest on the
             college. This was the stage decorative prepared for the college
@@ -35,14 +36,15 @@ const Work = () => {
             neStart- An IoT based device which can control a 3 phase water pump
             anywhere from the globe using ESP32, GSM SIM800
           </li>
-        </div>
-        <iframe
-          className="w-full h-full md:h-[50vh] md:w-[50vw]"
-          src="https://drive.google.com/file/d/1-aN0loumXIBhKHSPnr8GUiuUsYqEm3bT/preview"
-          allow="autoplay"
-          title="video1"
-        ></iframe>
-      </Fade>
+        </Fade>
+      </div>
+
+      <iframe
+        className="w-full h-full md:h-[50vh] md:w-[50vw]"
+        src="https://drive.google.com/file/d/1-aN0loumXIBhKHSPnr8GUiuUsYqEm3bT/preview"
+        allow="autoplay"
+        title="video1"
+      ></iframe>
     </div>
   );
 };
