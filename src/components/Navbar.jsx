@@ -55,7 +55,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="internship" smooth={true} duration={500}>
+            <Link to="internship" smooth={true} duration={500} offset={-80}>
               Internship
             </Link>
           </li>
@@ -139,6 +139,7 @@ const Navbar = () => {
             to="internship"
             smooth={true}
             duration={500}
+            offset={-80}
           >
             Internship
           </Link>

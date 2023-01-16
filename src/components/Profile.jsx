@@ -51,7 +51,7 @@ const Profile = () => {
               <span class="name">Sam George</span>
               <span class="place">Kerala</span>
               <p class="job">
-                IOT Code trainer
+                IOT Code Trainer
                 <br /> <br />
                 Alvas College Moodubidri
               </p>
