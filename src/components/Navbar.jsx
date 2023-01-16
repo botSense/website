@@ -59,6 +59,11 @@ const Navbar = () => {
               Internship
             </Link>
           </li>
+          <li>
+            <Link to="trainers" smooth={true} duration={500}>
+              Trainers
+            </Link>
+          </li>
         </Zoom>
       </ul>
       {/* End: Navigation Menu Links */}
@@ -136,6 +141,16 @@ const Navbar = () => {
             duration={500}
           >
             Internship
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link
+            onClick={handleToggleClick}
+            to="trainers"
+            smooth={true}
+            duration={500}
+          >
+            Trainers
           </Link>
         </li>
       </ul>

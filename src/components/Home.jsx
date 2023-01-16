@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 // import ignitra from "../assests/ignitra.jpg";
-import botsense from "../assests/botsense.png";
+import botsense from "../assests/botsense.jpeg";
 // import IMG2 from "../assests/img2.jpg";
 // import IMG3 from "../assests/img3.jpg";
 // import IMG4 from "../assests/img4.jpg";

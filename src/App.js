@@ -10,6 +10,7 @@ import Work from "./components/Work";
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
+import Profile from "./components/Profile";
 
 const App = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -624,6 +625,7 @@ const App = () => {
       <Work />
       <Contact />
       <Form />
+      <Profile />
       <Footer />
     </div>
   );
