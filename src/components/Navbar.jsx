@@ -29,27 +29,27 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} duration={500} offset={-25}>
+          <Link to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
         <li>
-          <Link to="vision" smooth={true} duration={500} offset={-150}>
+          <Link to="vision" smooth={true} duration={500}>
             Vision
           </Link>
         </li>
         <li>
-          <Link to="work" smooth={true} duration={500} offset={-150}>
+          <Link to="work" smooth={true} duration={500}>
             Work
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} duration={500} offset={-30}>
+          <Link to="contact" smooth={true} duration={500}>
             Contact
           </Link>
         </li>
         <li>
-          <Link to="internship" smooth={true} duration={500} offset={-100}>
+          <Link to="internship" smooth={true} duration={500}>
             Internship
           </Link>
         </li>
@@ -84,7 +84,6 @@ const Navbar = () => {
             to="about"
             smooth={true}
             duration={500}
-            offset={-25}
           >
             About
           </Link>
@@ -95,7 +94,6 @@ const Navbar = () => {
             to="vision"
             smooth={true}
             duration={500}
-            offset={-150}
           >
             Vision
           </Link>
@@ -106,7 +104,6 @@ const Navbar = () => {
             to="work"
             smooth={true}
             duration={500}
-            offset={-150}
           >
             Work
           </Link>
@@ -117,7 +114,6 @@ const Navbar = () => {
             to="contact"
             smooth={true}
             duration={500}
-            offset={-30}
           >
             Contact
           </Link>
@@ -128,7 +124,6 @@ const Navbar = () => {
             to="internship"
             smooth={true}
             duration={500}
-            offset={-100}
           >
             Internship
           </Link>
