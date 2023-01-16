@@ -19,7 +19,9 @@ const Navbar = () => {
         className="flex items-center h-10 cursor-pointer"
       >
         <img src={logo} alt="logo" className="h-20 w-20 animate-pulse" />
-        <p className=" text-white animate-pulse">botSense</p>
+        <p className=" text-white animate-pulse font-extrabold uppercase">
+          botSense
+        </p>
       </Link>
 
       {/* Start: Navigation Menu Links */}
@@ -30,7 +32,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="about" smooth={true} duration={500}>
+          <Link to="about" smooth={true} duration={500} offset={-80}>
             About
           </Link>
         </li>
@@ -86,6 +88,7 @@ const Navbar = () => {
             to="about"
             smooth={true}
             duration={500}
+            offset={-80}
           >
             About
           </Link>
