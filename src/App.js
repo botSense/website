@@ -4,15 +4,15 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
-import Form from './components/Form';
+// import Form from './components/Form';
 import Vision from './components/Vision';
 import Work from './components/Work';
 import { useCallback } from 'react';
 import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
 import Profile from './components/Profile';
-import ImageFetcher from './components/ImageFetcher';
-import Banner from './components/Banner';
+// import ImageFetcher from './components/ImageFetcher';
+// import Banner from './components/Banner';
 
 const App = () => {
 	const particlesInit = useCallback(async (engine) => {
@@ -624,13 +624,13 @@ const App = () => {
 			<Navbar />
 
 			<Home />
-			<Banner />
+			{/* <Banner /> */}
 			<About />
 			<Vision />
 			<Work />
 			<Contact />
-			<Form />
-			<ImageFetcher />
+			{/* <Form /> */}
+			{/* <ImageFetcher /> */}
 			<Profile />
 			<Footer />
 		</div>
