@@ -1,7 +1,7 @@
 # BotSense.tech - IoT and Automation Solutions
 
 [![Website](https://img.shields.io/website-up-down-green-red/https/botsense.tech.svg)](https://botsense.tech/)
-[![GitHub license](https://img.shields.io/github/license/username/repo.svg)](https://github.com/username/repo/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/deWebDev/repo.svg)](https://github.com/deWebDev/repo/blob/master/LICENSE)
 
 Welcome to the official GitHub repository for BotSense.tech, an innovative IoT startup specializing in IoT products and automation solutions. This repository contains the source code and development files for our website.
 
