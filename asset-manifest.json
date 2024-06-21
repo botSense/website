@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/website/static/css/main.64995036.css",
-    "main.js": "/website/static/js/main.0f4d4dae.js",
-    "static/media/botsense.JPG": "/website/static/media/botsense.6a1ecc2ddf2067cce227.JPG",
+    "main.js": "/website/static/js/main.95cc5e75.js",
     "static/media/ron.jpeg": "/website/static/media/ron.5d424d2ff6e5fd3c0459.jpeg",
+    "static/media/botsense-internship.jpeg": "/website/static/media/botsense-internship.c433f29311903857f091.jpeg",
     "static/media/sam.jpeg": "/website/static/media/sam.2618f3f07f4efc26ec47.jpeg",
     "static/media/logo.png": "/website/static/media/logo.142db80710efaaddab69.png",
     "index.html": "/website/index.html",
     "main.64995036.css.map": "/website/static/css/main.64995036.css.map",
-    "main.0f4d4dae.js.map": "/website/static/js/main.0f4d4dae.js.map"
+    "main.95cc5e75.js.map": "/website/static/js/main.95cc5e75.js.map"
   },
   "entrypoints": [
     "static/css/main.64995036.css",
-    "static/js/main.0f4d4dae.js"
+    "static/js/main.95cc5e75.js"
   ]
 }
